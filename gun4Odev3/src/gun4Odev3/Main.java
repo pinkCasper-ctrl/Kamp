@@ -17,14 +17,16 @@ public class Main {
 
 	public static void main(String[] args) {
 			Game game1=new Game("Araba Park Etme",1,55);
+		Game game2=new Game("ArabayÄ± parrlel park etme",8,16);
 			GameManager gameManager=new GameManager(new HibernateGameDao());
 			gameManager.add(game1);
-			
+			gameManager.add(game2);
 			Gamer gamer1=new Gamer(11,1788,"11111111112",1999,"Can","Kan","abc@gmail.com",113.5);
+		Gamer gamer1=new Gamer(11,1788,"11111111112",1999,"Can","Kan","abc@gmail.com",113.5);
 			GamerManager gamerManager=new GamerManager(new HibernateGamerDao());
 			gamerManager.add(gamer1);
 			
-			Campaign campaign1=new Campaign(100,10,50,"Süper Fırsat");
+			Campaign campaign1=new Campaign(100,10,50,"SÃ¼per FÃ½rsat");
 			CampaignManager campaignManager= new CampaignManager(new HibernateCampaignDao());	
 			campaignManager.add(campaign1);
 			
